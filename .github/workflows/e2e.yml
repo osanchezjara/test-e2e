@@ -1,0 +1,15 @@
+name: Run End2End Tests
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run end-to-end tests script
+        run: echo "Ejecutando pruebas..."
